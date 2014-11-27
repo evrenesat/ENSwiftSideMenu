@@ -38,6 +38,10 @@ class ENSideMenuNavigationController: UINavigationController, ENSideMenuProtocol
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+    func toggleMenu(){
+        self.sideMenu?.toggleMenu()
+    }    
     
     // MARK: - Navigation
     func setContentViewController(contentViewController: UIViewController) {
